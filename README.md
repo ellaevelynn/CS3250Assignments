@@ -13,9 +13,8 @@ Write the Git commands below:
 1. mkdir sc1 && cd sc1 
 2. git init -b main
 3. git add paper.txt
-    _(...Jane makes edits before committing changes)_
+#Comment: Jane makes edits before committing changes
 3.5 git comit -m "Initial commit"
-    _(...Jane makes additional edits and does not commit them)_
 4.  git checout HEAD -- paper.txt
 ```
 
@@ -24,15 +23,17 @@ Write the Git commands below:
 Joachin wants to use Git to manage the versions of a new Python package he is developing. The project files are located in a folder named **sc2**. To prevent sensitive information from being tracked by Git, he creates a **.gitignore** file and adds **.secrets** to it. Next, he initializes a new Git repository in the **sc2** folder [1], making sure the default branch is named **main**. He then stages all project files [2] and creates the initial commit with the message "project kickoff" [3]. Assume a GitHub repository already exists at "https://github.com/joachin/sc2". Joachin configures this repository as a remote named **origin** and pushes the local **main** branch to the remote **main** branch [4].
 
 ```
-COPY AND PASTE .gitignore here
+COPY AND PASTE .gitignore here: .secrets
 ```
 
 ```
 Write the Git commands below: 
-1. 
-2.
-3.
-4. 
+1. git init -b main
+2. git add .
+3. git commit -m "project kickoff"
+4. git remote add origin [https://github.com/joachin/sc2]
+   (https://github.com/joachin/sc2)
+   git push -u origin main
 ```
 
 ## Scenario 3
@@ -43,15 +44,16 @@ After cloning the repository, Sam creates and switches to a new branch named **f
 
 ```
 Write the Git commands below: 
-1. 
-2.
-3.
-4. 
-5.
-6.
-7.
-8.
-9.
-10.
-11. 
+1. git clone [https://github.com/bob/sc3]
+    (https://github.com/bob/sc3)
+2. git add README.md
+3. git commit -m "Add project README"
+4. git push origin main
+5. git checkout -b feature/search
+6. git add main.py
+7. git commit -m "Add search feature"
+8. git checkout main
+9. git pull origin main
+10. git merge feature/search
+11. git push origin main
 ```
