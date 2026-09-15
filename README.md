@@ -10,10 +10,13 @@ Jane wants to use Git to manage the versions of a paper stored in a file named *
 
 ```
 Write the Git commands below: 
-1. 
-2. 
-3. 
-4.  
+1. mkdir sc1 && cd sc1 
+2. git init -b main
+3. git add paper.txt
+    _(...Jane makes edits before committing changes)_
+3.5 git comit -m "Initial commit"
+    _(...Jane makes additional edits and does not commit them)_
+4.  git checout HEAD -- paper.txt
 ```
 
 # Scenario 2
