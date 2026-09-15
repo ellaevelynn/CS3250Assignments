@@ -13,7 +13,6 @@ Write the Git commands below:
 1. mkdir sc1 && cd sc1 
 2. git init -b main
 3. git add paper.txt
-#Comment: Jane makes edits before committing changes
 3.5 git comit -m "Initial commit"
 4.  git checout HEAD -- paper.txt
 ```
